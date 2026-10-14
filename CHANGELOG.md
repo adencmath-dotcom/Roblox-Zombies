@@ -33,6 +33,33 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Draft Der Eisendrache map reference
+
+- **Task ID:** MAP-002
+- **Author / Implementer:** Claude
+- **Reviewer:** Pending
+- **Category:** Documentation
+- **Status:** Implemented (draft)
+
+**Changes made:**
+- Created `Docs/MAP_REFERENCE.md`: areas, connections, perks, wall-buys, power, Pack-a-Punch, Wunderspheres, traps and dragon statues, each tagged with a confidence level.
+- Marked MAP-002 IN PROGRESS on `TASK_BOARD.md`.
+
+**Files or map sections affected:**
+- `Docs/MAP_REFERENCE.md` (new), `TASK_BOARD.md`, `CHANGELOG.md`
+
+**Testing performed:**
+- NOT TESTED — documentation only. Facts come from written guides and have not been checked against gameplay footage.
+
+**Known issues or risks:**
+- Several room connections and Wundersphere pairs conflict between sources (marked ❓).
+- Door costs, Mystery Box spots and zombie spawn windows are not yet recorded.
+
+**Follow-up tasks:**
+- Verify against a full map walkthrough video; then MAP-003.
+
+---
+
 ### [2026-10-13] — First map selected: Der Eisendrache
 
 - **Task ID:** MAP-001

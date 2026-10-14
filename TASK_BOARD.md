@@ -42,10 +42,11 @@ Every meaningful change should have a task. Keep tasks small enough that one dev
     - The team agrees on the target scope.
 
 - [ ] **MAP-002 — Collect Map References**
-  - Status: PLANNED
-  - Owner: TBD
-  - Implementer: TBD
+  - Status: IN PROGRESS
+  - Owner: adencmath-dotcom
+  - Implementer: Claude
   - Reviewer: TBD
+  - Progress: Draft `Docs/MAP_REFERENCE.md` created from written guides. Still needs footage verification, door costs, Mystery Box spots, and zombie spawn windows.
   - Dependencies: MAP-001
   - Scope: Collect screenshots, layout references, and relevant video footage.
   - Acceptance criteria:
