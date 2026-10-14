@@ -4,7 +4,7 @@
 **Status:** PROPOSED — needs agreement from both developers before the blockout (MAP-004) starts.  
 **Layout source:** `Docs/MAP_REFERENCE.md`
 
-**Limitation:** These conventions were written without inspecting the Studio place (no place was open). Before MAP-004, compare them with the place's existing objects and adjust them rather than create duplicates (`AI_RULES.md` §5).
+**Studio place:** Project Zomblox (place ID 81227088977620). Checked on 2026-10-13: it holds only the default Baseplate and SpawnLocation, and no scripts, so nothing conflicts with these conventions.
 
 ---
 
@@ -114,4 +114,4 @@ Format: `Type_<SectionId>_<Detail>`, PascalCase, no spaces. Numbers use two digi
 - [ ] Agree on Spawn as the origin and North = −Z.
 - [ ] Agree on the section list in §4 (add, merge or rename sections now, before building).
 - [ ] Agree on the naming patterns in §5.
-- [ ] Confirm which Studio place is the project place.
+- [x] Project place: Project Zomblox (place ID 81227088977620).

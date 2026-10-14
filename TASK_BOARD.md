@@ -59,7 +59,7 @@ Every meaningful change should have a task. Keep tasks small enough that one dev
   - Owner: adencmath-dotcom
   - Implementer: Claude
   - Reviewer: cameron290
-  - Progress: Proposal written in `Docs/MAP_BUILD_PLAN.md` (scale, origin, section IDs, naming, blockout rules). Needs team agreement on the decisions listed in its §7, and a check against the Studio place.
+  - Progress: Proposal written in `Docs/MAP_BUILD_PLAN.md` (scale, origin, section IDs, naming, blockout rules). Checked against the Studio place (Project Zomblox — empty, no conflicts). Needs team agreement on the decisions listed in its §7.
   - Dependencies: MAP-001
   - Scope: Establish a shared scale, coordinate conventions, and object naming rules.
   - Acceptance criteria:
