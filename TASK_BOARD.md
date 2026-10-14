@@ -55,10 +55,11 @@ Every meaningful change should have a task. Keep tasks small enough that one dev
     - Reference materials are organized in `Docs/MAP_REFERENCE.md`.
 
 - [ ] **MAP-003 — Establish Map Coordinates and Naming**
-  - Status: PLANNED
-  - Owner: TBD
-  - Implementer: TBD
-  - Reviewer: TBD
+  - Status: REVIEW
+  - Owner: adencmath-dotcom
+  - Implementer: Claude
+  - Reviewer: cameron290
+  - Progress: Proposal written in `Docs/MAP_BUILD_PLAN.md` (scale, origin, section IDs, naming, blockout rules). Needs team agreement on the decisions listed in its §7, and a check against the Studio place.
   - Dependencies: MAP-001
   - Scope: Establish a shared scale, coordinate conventions, and object naming rules.
   - Acceptance criteria:

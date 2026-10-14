@@ -33,6 +33,32 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Propose map scale, coordinates and naming
+
+- **Task ID:** MAP-003
+- **Author / Implementer:** Claude
+- **Reviewer:** cameron290 (pending)
+- **Category:** Documentation / Architecture
+- **Status:** Implemented (proposal)
+
+**Changes made:**
+- Created `Docs/MAP_BUILD_PLAN.md`: scale (1 m = 3.5 studs), origin at the Spawn floor, North = −Z, 14 stable section IDs, object naming patterns, and blockout rules.
+- Linked it from `ARCHITECTURE.md` §7; moved MAP-003 to REVIEW.
+
+**Files or map sections affected:**
+- `Docs/MAP_BUILD_PLAN.md` (new), `ARCHITECTURE.md`, `TASK_BOARD.md`, `CHANGELOG.md`
+
+**Testing performed:**
+- NOT TESTED — no Studio place was open, so the conventions were not checked against existing objects, and the scale has not been tried with a test doorway.
+
+**Known issues or risks:**
+- The scale is a starting value; confirm it with a test doorway before building rooms.
+
+**Follow-up tasks:**
+- Team agreement on `MAP_BUILD_PLAN.md` §7, then MAP-004 (blockout).
+
+---
+
 ### [2026-10-13] — Draft Der Eisendrache map reference
 
 - **Task ID:** MAP-002

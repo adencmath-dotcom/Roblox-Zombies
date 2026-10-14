@@ -221,6 +221,8 @@ Examples:
 
 Gameplay identifiers should remain stable even if visual models are adjusted.
 
+The full scale, coordinate, section ID and naming rules for Der Eisendrache are in `Docs/MAP_BUILD_PLAN.md` (proposed in MAP-003).
+
 Where practical, store gameplay properties in configuration or clearly defined attributes instead of relying on arbitrary object names.
 
 Before changing map coordinates, room connections, or named gameplay objects, confirm the change is approved.
