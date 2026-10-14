@@ -33,6 +33,39 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Remove imported Call of Duty asset data
+
+- **Task ID:** GAME-001 follow-up (`STUDIO_AUDIT.md` §5, item 1)
+- **Author / Implementer:** Claude, at the project owner's request
+- **Reviewer:** Pending
+- **Category:** Bug Fix / Assets
+- **Status:** Implemented
+
+**Changes made:**
+- Deleted `ServerStorage.ImportedData`: 208 modules of mesh and texture data named after Black Ops III asset files (dragon, keeper, Apothicon sword, Gauntlet of Siegfried, Skull of Nan Sapwe, skeleton, zombie head).
+- `ReplicatedStorage.Citadel.Config`: removed `ImportedModel` from the Sword, Skull and Gauntlet, so they use the standard weapon viewmodel.
+- `ReplicatedStorage.Citadel.ImportedMesh`: `Prepare()` now returns early when `ImportedData` is missing.
+- `CitadelClient.ZombieVisuals`: skips the imported skeleton when no templates exist (previously the client would wait 45 seconds for them); zombies show the default rig.
+- All edits were recorded as one Studio undo step.
+
+**Files or map sections affected:**
+- Studio, "Arlo num num": `ServerStorage.ImportedData` (deleted), `ReplicatedStorage.Citadel.Config`, `ReplicatedStorage.Citadel.ImportedMesh`, `StarterPlayerScripts.CitadelClient.ZombieVisuals`.
+
+**Testing performed:**
+- All four affected scripts, plus server and client `Main`, compile (checked with `loadstring`).
+- No objects with Black Ops III asset names remain in the place.
+- NOT TESTED in play: wonder weapon viewmodels and zombie appearance have not been checked in a playtest.
+
+**Known issues or risks:**
+- The 18 `Texture_Perk_*` modules (perk logo artwork) and Call of Duty names in `Config` and `PerkMachines` remain; awaiting a team decision.
+- The deletion can be undone with Studio undo during this session, or from the place's version history afterwards.
+
+**Follow-up tasks:**
+- Playtest the wonder weapons and zombies.
+- Decide on the perk artwork and names.
+
+---
+
 ### [2026-10-13] — Ironheart respects the four-perk limit
 
 - **Task ID:** GAME-001 follow-up
