@@ -33,6 +33,36 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Redesign perk machines as original "tonic shrines"
+
+- **Task ID:** GAME-001 follow-up (`STUDIO_AUDIT.md` §5, item 1)
+- **Author / Implementer:** Claude, at the project owner's request
+- **Reviewer:** Pending
+- **Category:** Assets / Map
+- **Status:** Implemented
+
+**Changes made:**
+- Rewrote `ServerScriptService.CitadelServer.PerkMachines` so no machine imitates a Call of Duty cabinet:
+  - **Perks:** a stone shrine with two columns, a snow-capped lintel bearing the perk name, a brass-banded glass vial of glowing tonic in the perk's colour, a spout and cup tray, a price plaque, and a unique neon glyph per perk (diamond, chevrons, ring, twin bars, arrow, three dots, crosshair, lightning Z, snowflake, square).
+  - **Aether Forge:** a stone forge bed with two brass-capped uprights, a 16-segment brass ring around a glowing core, an anvil block and a name plaque.
+- Same interface as before (`Identify`, `Apply`, the `PerkId` and `DetailedProp` attributes, the prompt's `ObjectText`). The `ReferenceMachine` version was bumped from 2 to 3, so any machine built by the old code is rebuilt.
+- About 30 parts per machine; all decorative parts are non-colliding, and the invisible anchor remains the collision box.
+
+**Files or map sections affected:**
+- Studio, "Arlo num num": `CitadelServer.PerkMachines` only. Machines are built when the game runs, so no saved map geometry changed.
+
+**Testing performed:**
+- Compiles. All 10 perk shrines and the forge were built in a temporary preview area far from the map, checked in screenshots, and the preview was deleted.
+- NOT TESTED in play: the machines have not been seen in their real map positions, and purchasing from them has not been tried.
+
+**Known issues or risks:**
+- Plaque text is small at a distance; adjust the size after a playtest if needed.
+
+**Follow-up tasks:**
+- Playtest: check each machine's placement, prompt and purchase.
+
+---
+
 ### [2026-10-13] — Replace Call of Duty perk artwork and names
 
 - **Task ID:** GAME-001 follow-up (`STUDIO_AUDIT.md` §5, item 1)
