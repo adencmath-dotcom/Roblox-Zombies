@@ -33,6 +33,35 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Audit of the "Arlo num num" Studio place
+
+- **Task ID:** GAME-001
+- **Author / Implementer:** Claude
+- **Reviewer:** cameron290 (pending)
+- **Category:** Documentation
+- **Status:** Implemented
+
+**Changes made:**
+- Created `Docs/STUDIO_AUDIT.md` documenting the existing build: about 21,400 map parts, about 50 game scripts, and 208 imported data modules.
+- Put the MAP-003 proposal on hold, because the existing build uses a much larger scale.
+- Moved GAME-001 to REVIEW.
+
+**Files or map sections affected:**
+- `Docs/STUDIO_AUDIT.md` (new), `Docs/MAP_BUILD_PLAN.md`, `TASK_BOARD.md`, `CHANGELOG.md`. No Studio changes.
+
+**Testing performed:**
+- NOT TESTED — read-only inspection. No playtest was run, and `CitadelServer.Tests` was not run.
+
+**Known issues or risks:**
+- Imported Call of Duty asset data in `ServerStorage.ImportedData`.
+- The map is modified at runtime by `Reconstruction` and `LayoutRebuild`.
+- Every perk machine grants Ironheart.
+
+**Follow-up tasks:**
+- Team decisions in `STUDIO_AUDIT.md` §5; revise MAP-003 and `ARCHITECTURE.md` to match the existing build.
+
+---
+
 ### [2026-10-13] — Propose map scale, coordinates and naming
 
 - **Task ID:** MAP-003

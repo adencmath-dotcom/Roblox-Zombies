@@ -4,7 +4,9 @@
 **Status:** PROPOSED — needs agreement from both developers before the blockout (MAP-004) starts.  
 **Layout source:** `Docs/MAP_REFERENCE.md`
 
-**Studio place:** Project Zomblox (place ID 81227088977620). Checked on 2026-10-13: it holds only the default Baseplate and SpawnLocation, and no scripts, so nothing conflicts with these conventions.
+> ⚠️ **On hold (2026-10-13):** the team is working in "Arlo num num" (place ID 95925940792219), which already contains a large Der Eisendrache build at a much larger scale (doorways about 14 studs wide). The scale, origin and naming below were written for an empty place and conflict with that build. See `Docs/STUDIO_AUDIT.md` before using anything in this document.
+
+**Studio place (original):** Project Zomblox (place ID 81227088977620), an empty baseplate when checked.
 
 ---
 
@@ -114,4 +116,4 @@ Format: `Type_<SectionId>_<Detail>`, PascalCase, no spaces. Numbers use two digi
 - [ ] Agree on Spawn as the origin and North = −Z.
 - [ ] Agree on the section list in §4 (add, merge or rename sections now, before building).
 - [ ] Agree on the naming patterns in §5.
-- [x] Project place: Project Zomblox (place ID 81227088977620).
+- [ ] Confirm the project place: Project Zomblox (81227088977620, empty) or Arlo num num (95925940792219, existing build).

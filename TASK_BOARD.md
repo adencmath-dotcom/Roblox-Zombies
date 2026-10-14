@@ -59,7 +59,7 @@ Every meaningful change should have a task. Keep tasks small enough that one dev
   - Owner: adencmath-dotcom
   - Implementer: Claude
   - Reviewer: cameron290
-  - Progress: Proposal written in `Docs/MAP_BUILD_PLAN.md` (scale, origin, section IDs, naming, blockout rules). Checked against the Studio place (Project Zomblox — empty, no conflicts). Needs team agreement on the decisions listed in its §7.
+  - Progress: Proposal written in `Docs/MAP_BUILD_PLAN.md`. **On hold:** the GAME-001 audit found an existing build in "Arlo num num" at a much larger scale, so the proposal must be revised to match it (see `Docs/STUDIO_AUDIT.md`).
   - Dependencies: MAP-001
   - Scope: Establish a shared scale, coordinate conventions, and object naming rules.
   - Acceptance criteria:
@@ -111,10 +111,11 @@ Every meaningful change should have a task. Keep tasks small enough that one dev
 ### Phase 3 — First Playable Gameplay Loop
 
 - [ ] **GAME-001 — Inspect and Document Existing Scripts**
-  - Status: PLANNED
-  - Owner: TBD
-  - Implementer: TBD
-  - Reviewer: TBD
+  - Status: REVIEW
+  - Owner: adencmath-dotcom
+  - Implementer: Claude
+  - Reviewer: cameron290
+  - Progress: Audit of "Arlo num num" written to `Docs/STUDIO_AUDIT.md`. Found a working prototype ("FROSTBOUND — The Citadel") and six decisions for the team (§5), including imported Call of Duty assets.
   - Dependencies: Access to the current Roblox Studio project
   - Scope: Audit the actual hierarchy and existing scripts before creating replacements.
   - Acceptance criteria:
