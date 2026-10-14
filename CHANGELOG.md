@@ -33,6 +33,32 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Ironheart respects the four-perk limit
+
+- **Task ID:** GAME-001 follow-up
+- **Author / Implementer:** Claude
+- **Reviewer:** Pending
+- **Category:** Bug Fix
+- **Status:** Implemented
+
+**Changes made:**
+- Added one line to the purchase handler in `ServerScriptService.CitadelServer.Main` (line 134): buying Ironheart is refused with "Four-perk limit reached." when the player already holds four perks, matching the check `Progression` uses for the other nine perks.
+
+**Files or map sections affected:**
+- Studio: `ServerScriptService.CitadelServer.Main` in "Arlo num num" (place ID 95925940792219).
+
+**Testing performed:**
+- The script compiles (checked with `loadstring` in Studio).
+- NOT TESTED in play: buying four perks and then Ironheart has not been tried.
+
+**Known issues or risks:**
+- None known.
+
+**Follow-up tasks:**
+- Playtest: buy four perks, then try Ironheart.
+
+---
+
 ### [2026-10-13] — Audit of the "Arlo num num" Studio place
 
 - **Task ID:** GAME-001

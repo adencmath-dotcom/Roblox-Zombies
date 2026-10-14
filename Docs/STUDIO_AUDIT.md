@@ -104,7 +104,7 @@ The proposal must be revised to match the existing build, or the team must decid
 2. **The map is rebuilt at runtime.** See §2. Agree on a rule, either "edit the map in Studio and disable runtime rebuilds" or "edit the builder modules only", before anyone edits geometry.
 3. **Architecture differs from `ARCHITECTURE.md`.** The real code uses `CitadelServer` modules (`Combat`, `Director`, `Progression`…) rather than the proposed `RoundService` / `PointsService` structure. Under `AI_RULES.md` §9, the existing implementation takes precedence, so `ARCHITECTURE.md` should be updated to describe it.
 4. **Scope is well beyond the first version.** Camos, gums, bows, wonder weapons and dragon quests are listed as out of scope in `GAME_BIBLE.md` §13. The team should decide whether to keep, freeze or remove them.
-5. **Ironheart skips the 4-perk limit** (see §3). A minor inconsistency. An earlier version of this audit wrongly said every perk machine granted Ironheart; the other perks are handled by `Progression` and work correctly.
+5. **Ironheart skips the 4-perk limit** (see §3). *Fixed 2026-10-13 in `Main` line 134; not yet playtested.* A minor inconsistency. An earlier version of this audit wrongly said every perk machine granted Ironheart; the other perks are handled by `Progression` and work correctly.
 6. **Which place is the project?** Project Zomblox (empty) and Arlo num num (this build) are different places. The docs should name one.
 
 ---
