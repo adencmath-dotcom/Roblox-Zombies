@@ -51,7 +51,7 @@ Read in full: `Main`, `Config`, `MapLayout`, `MapBuilder`, `Combat`, `Tests`. **
 | Purchases | Exists | `Main` prompt handler | Server checks distance (14 studs), line of sight, a 0.4 s cooldown and the balance before spending |
 | Doors | 1 door | `ChapelGate` (750) | Only one purchasable door exists |
 | Power | Exists | `Power relay` | Gates perks, upgrades, teleports and the bow |
-| Perks | Partial | `Ironheart tonic` (2500) | `Config` lists 10 perks, but `Main`'s purchase handler **always grants Ironheart** for any perk machine |
+| Perks | Exists | `Ironheart tonic` (2500, via `Main`); the other 9 machines are created at runtime by `Progression` | 4-perk limit. Ironheart's purchase path in `Main` does **not** check that limit, so it can be bought as a fifth perk |
 | Mystery box | Exists | `Arsenal cache` (950) | Random pool of 3 weapons |
 | Pack-a-Punch | Exists | `Aether forge` (5000) | Damage × 2.5, magazine × 2 |
 | Wall-buy | 1 | `Bastion AR` (1000) | — |
@@ -104,7 +104,7 @@ The proposal must be revised to match the existing build, or the team must decid
 2. **The map is rebuilt at runtime.** See §2. Agree on a rule, either "edit the map in Studio and disable runtime rebuilds" or "edit the builder modules only", before anyone edits geometry.
 3. **Architecture differs from `ARCHITECTURE.md`.** The real code uses `CitadelServer` modules (`Combat`, `Director`, `Progression`…) rather than the proposed `RoundService` / `PointsService` structure. Under `AI_RULES.md` §9, the existing implementation takes precedence, so `ARCHITECTURE.md` should be updated to describe it.
 4. **Scope is well beyond the first version.** Camos, gums, bows, wonder weapons and dragon quests are listed as out of scope in `GAME_BIBLE.md` §13. The team should decide whether to keep, freeze or remove them.
-5. **The perk machine bug.** Every perk machine grants Ironheart (see §3).
+5. **Ironheart skips the 4-perk limit** (see §3). A minor inconsistency. An earlier version of this audit wrongly said every perk machine granted Ironheart; the other perks are handled by `Progression` and work correctly.
 6. **Which place is the project?** Project Zomblox (empty) and Arlo num num (this build) are different places. The docs should name one.
 
 ---

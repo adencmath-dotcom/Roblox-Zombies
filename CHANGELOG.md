@@ -55,7 +55,7 @@ Entries should be factual and concise. Record what actually changed, who made th
 **Known issues or risks:**
 - Imported Call of Duty asset data in `ServerStorage.ImportedData`.
 - The map is modified at runtime by `Reconstruction` and `LayoutRebuild`.
-- Every perk machine grants Ironheart.
+- Ironheart can be bought past the 4-perk limit. (Corrected: an earlier note said every perk machine granted Ironheart, which was wrong.)
 
 **Follow-up tasks:**
 - Team decisions in `STUDIO_AUDIT.md` §5; revise MAP-003 and `ARCHITECTURE.md` to match the existing build.
