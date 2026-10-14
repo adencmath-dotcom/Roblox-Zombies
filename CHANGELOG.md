@@ -33,6 +33,56 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — Replace Call of Duty perk artwork and names
+
+- **Task ID:** GAME-001 follow-up (`STUDIO_AUDIT.md` §5, item 1)
+- **Author / Implementer:** Claude, at the project owner's request
+- **Reviewer:** Pending
+- **Category:** Assets / UI
+- **Status:** Implemented
+
+**Changes made:**
+- Deleted the 18 `ReplicatedStorage.Citadel.Texture_Perk_*` artwork modules.
+- `CitadelClient.PerkIcons`: rewritten to show original round text badges (IH, QH, SW…) for owned perks instead of the artwork. Same `Init(hud)` interface.
+- Renamed everything players can see:
+
+| Before | After |
+|---|---|
+| Jugger-Nog | Ironheart |
+| Speed Cola | Quick Hands |
+| Quick Revive | Second Wind |
+| Double Tap (Root Beer) | Double Strike |
+| Stamin-Up | Fleetfoot |
+| Mule Kick ("Uno mas!!") | Third Arm ("One more!") |
+| Deadshot Daiquiri | Deadeye |
+| Electric Cherry | Static |
+| Widow's Wine | Winter Veil |
+| PhD Flopper | Blast Ward |
+| Pack-a-Punch | Aether Forge |
+| GobbleGum | Elixirs |
+| Wrath of the Ancients | Dragon's Oath |
+| Apothicon Sword | Rift Blade |
+| Skull of Nan Sapwe | Frost Reliquary |
+| Gauntlet of Siegfried | Wyrmfire Gauntlet |
+| "DER EISENDRACHE" menu title | "FROSTBOUND" |
+
+**Files or map sections affected:**
+- Studio, "Arlo num num": `ReplicatedStorage.Citadel.Config`, `CitadelServer.PerkMachines`, `CitadelServer.PropDetail`, `CitadelClient.UI`, `CitadelClient.PerkIcons`; 18 texture modules deleted. One Studio undo step.
+
+**Testing performed:**
+- Every edited script, plus server and client `Main`, compiles.
+- A rescan of the whole place found no Call of Duty names or asset-file names.
+- NOT TESTED in play: the new perk badges, machine signs and menu title have not been seen in a playtest.
+
+**Known issues or risks:**
+- The perk machine cabinet shapes still imitate the originals.
+- Planning docs in this repo still use Call of Duty names as reference; they are not shipped with the game.
+
+**Follow-up tasks:**
+- Playtest the HUD and machines; consider original cabinet designs.
+
+---
+
 ### [2026-10-13] — Remove imported Call of Duty asset data
 
 - **Task ID:** GAME-001 follow-up (`STUDIO_AUDIT.md` §5, item 1)
