@@ -29,7 +29,8 @@ Every meaningful change should have a task. Keep tasks small enough that one dev
 ### Phase 1 — Planning and Reference Collection
 
 - [ ] **MAP-001 — Select the First Reference Map**
-  - Status: IN PROGRESS
+  - Status: REVIEW
+  - Decision: Der Eisendrache (Black Ops III, Awakening DLC). Map name and reference version recorded in `GAME_BIBLE.md`; team agreement on target scope still pending.
   - Owner: Team
   - Implementer: Team
   - Reviewer: Team

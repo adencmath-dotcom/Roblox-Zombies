@@ -33,6 +33,32 @@ Entries should be factual and concise. Record what actually changed, who made th
 
 ## Project History
 
+### [2026-10-13] — First map selected: Der Eisendrache
+
+- **Task ID:** MAP-001
+- **Author / Implementer:** Project owner (decision); Claude (documentation)
+- **Reviewer:** Pending — team
+- **Category:** Documentation
+- **Status:** Implemented
+
+**Changes made:**
+- Recorded Der Eisendrache (Black Ops III, Awakening DLC) as the first map.
+- Moved MAP-001 to REVIEW pending team agreement on target scope.
+
+**Files or map sections affected:**
+- `GAME_BIBLE.md`, `TASK_BOARD.md`, `ARCHITECTURE.md`, `README.md`, `CHANGELOG.md`
+
+**Testing performed:**
+- NOT TESTED — documentation only; no Studio changes.
+
+**Known issues or risks:**
+- Target scope (which areas of the map to build first) is not yet agreed.
+
+**Follow-up tasks:**
+- MAP-002 (collect references), MAP-003 (coordinates and naming).
+
+---
+
 ### [Initial Setup] — Shared Development Documentation
 
 - **Category:** Documentation
@@ -70,7 +96,7 @@ Record major decisions that affect the project's direction.
 
 | Date | Decision | Reason | Approved by |
 |---|---|---|---|
-| TBD | Select initial Zombies map | Establish a clear map-building target | Team |
+| 2026-10-13 | Initial map: Der Eisendrache | Establish a clear map-building target | Project owner |
 | TBD | Approve final system architecture | Avoid conflicting implementations | Team |
 | TBD | Set target player count | Guide multiplayer and performance testing | Team |
 

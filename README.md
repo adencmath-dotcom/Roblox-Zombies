@@ -107,10 +107,10 @@ Use original, licensed, or otherwise authorized assets where appropriate.
 ## Current Project Status
 
 - **Development stage:** Early planning and setup.
-- **First map:** Not yet finalized.
+- **First map:** Der Eisendrache (Black Ops III). Target scope still to be agreed.
 - **Map blockout:** Not confirmed complete.
 - **Gameplay systems:** Must be audited in Roblox Studio before their status is declared.
-- **Next milestone:** Select the reference map and document its layout.
+- **Next milestone:** Agree on the map's target scope and document its layout.
 
 Update this section as verified progress is made.
 

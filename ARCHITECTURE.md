@@ -284,7 +284,7 @@ Record approved decisions here.
 
 | Date | Decision | Reason |
 |---|---|---|
-| TBD | First map selection | Awaiting team decision |
+| 2026-10-13 | First map: Der Eisendrache (Black Ops III) | Chosen by project owner |
 | TBD | Final service structure | Awaiting inspection of current project |
 | TBD | Target player count | Awaiting team decision |
 

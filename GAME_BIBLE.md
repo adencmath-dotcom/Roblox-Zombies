@@ -31,7 +31,7 @@ The game should feel like a carefully crafted Zombies experience, not a generic 
 
 ## 2. Map Specification
 
-**Initial Map:** TBD — choose the reference map before detailed construction.
+**Initial Map:** Der Eisendrache (Call of Duty: Black Ops III).
 
 **Primary Objective:** Recreate one selected Zombies map as faithfully as practical within Roblox Studio.
 
@@ -60,8 +60,9 @@ The game should feel like a carefully crafted Zombies experience, not a generic 
 
 ### Map Reference
 
-- **Map name:** TBD
-- **Reference game/version:** TBD
+- **Map name:** Der Eisendrache
+- **Reference game/version:** Call of Duty: Black Ops III — Awakening DLC (2016)
+- **Target scope:** TBD — to be agreed by the team (MAP-001)
 - **Primary reference materials:** To be documented in `Docs/MAP_REFERENCE.md`
 - **Map layout/build plan:** To be documented in `Docs/MAP_BUILD_PLAN.md`
 
@@ -299,7 +300,7 @@ Use original or properly authorized assets rather than assuming that assets from
 ## 12. Development Priorities
 
 ### Phase 1 — Reference and Planning
-- [ ] Select the first map.
+- [x] Select the first map (Der Eisendrache).
 - [ ] Collect reference materials.
 - [ ] Document the layout and important landmarks.
 - [ ] Establish naming conventions and coordinate standards.
@@ -395,7 +396,7 @@ If these sources conflict, stop and identify the conflict instead of guessing.
 ## 15. Decisions To Finalize
 
 - [ ] Official game title.
-- [ ] First map to recreate.
+- [x] First map to recreate: Der Eisendrache.
 - [ ] Target player count.
 - [ ] Target visual fidelity versus Roblox performance.
 - [ ] Initial weapon.
